@@ -1,0 +1,23 @@
+pretrained_model_name_or_path: "runwayml/stable-diffusion-v1-5"
+output_dir: "./outputs/sthv2_seer"
+data_dir: "../mmaction2/data/sthv2"
+dataset: "sthv2" #"bridgedata", "epickitchen"
+resolution: 256
+cond_frames: 2 #sthv2 = (1 or 2), bridgedata = 1, epickitchen = 1
+num_frames: 12 #sthv2 = (12 or 16), bridgedata = 16, epickitchen = (12 or 16)
+
+val_batch_size: 1
+compute_fvd: False
+MAX_FVD_BATCH: 32
+compute_is: True
+MAX_IS_BATCH: 100
+
+seed: 0
+revision: null
+sample_iter: 8 #iteration times of inference
+num_samples: 4 #number of sampling times for each video clip
+scale: 7.5 #sample conditional scale
+ddim_steps: 30 #number of ddim sampling steps
+n_rows: 1 #rows in gif (rows <= total batch size)
+mixed_precision: "fp16" #choices=["no", "fp16", "bf16"]
+saved_global_step: 200000 # saved global steps of checkpoint folder

@@ -1,0 +1,35 @@
+pretrained_model_name_or_path: "runwayml/stable-diffusion-v1-5"
+output_dir: "./outputs/sthv2_seer"
+data_dir: "../mmaction2/data/sthv2"
+dataset: "sthv2" #"bridgedata", "epickitchen"
+resolution: 256
+num_workers: 16
+cond_frames: 2 #sthv2 = (1 or 2), bridgedata = 1, epickitchen = 1
+num_frames: 12 #sthv2 = (12 or 16), bridgedata = 16, epickitchen = (12 or 16)
+
+learning_rate: 1.28e-5 # GPUs x batch size x accmulation steps = 1.024e-4 (default RTX 3090 GPUs=4, batch size = 1, accmulation stepsb = 2)
+train_batch_size: 1
+val_batch_size: 2
+gradient_accumulation_steps: 2
+lr_warmup_steps: 10000
+max_train_steps: 200000 #sthv2 = 200000, bridgedata = 80000, epickitchen = 80000
+save_steps: 1000
+text_loss: False
+fstext_init_ckpt: "./store_pth/fstext_init/pytorch_model.bin"
+
+seed: 0
+revision: null
+adam_beta1: 0.9
+adam_beta2: 0.999
+max_grad_norm: 0.3 #maximum clip gradient norm
+adam_weight_decay: 1e-2
+adam_epsilon: 1e-08
+use_8bit_adam: False
+scale_lr: True
+push_to_hub: False
+hub_token: False
+hub_model_id: null
+logging_dir: "logs"
+mixed_precision: "fp16" #choices=["no", "fp16", "bf16"]
+lr_scheduler: "cosine"
+saved_global_step: 0 # start from the current training step
