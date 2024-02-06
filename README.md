@@ -7,7 +7,9 @@ This repository is the official PyTorch implementation for Seer introduced in th
 Xianfan Gu, Chuan Wen, Weirui Ye, Jiaming Song, and Yang Gao
 <br>
 ## Approach
-<video src="src/pipeline_video.mp4" /video>
+<div align="center">
+<video src="src/pipeline_video.mp4" controls></video>
+</div>
 
 
 ## Installation
