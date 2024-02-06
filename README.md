@@ -8,7 +8,7 @@ Xianfan Gu, Chuan Wen, Weirui Ye, Jiaming Song, and Yang Gao
 <br>
 ## Approach
 <div align="center">
-<video src="src/pipeline_video.mp4" controls></video>
+![](src/pipeline_video.mp4)
 </div>
 
 
