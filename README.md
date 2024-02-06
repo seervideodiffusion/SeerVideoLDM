@@ -9,6 +9,10 @@ Xianfan Gu, Chuan Wen, Weirui Ye, Jiaming Song, and Yang Gao
 ## Approach
 <video src="https://raw.githubusercontent.com/seervideodiffusion/SeerVideoLDM/main/src/pipeline_video.mp4" controls></video>
 
+Uploading pipeline_video.mp4…
+
+
+
 
 ## Installation
 
