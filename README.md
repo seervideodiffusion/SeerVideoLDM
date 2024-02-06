@@ -8,7 +8,7 @@ Xianfan Gu, Chuan Wen, Weirui Ye, Jiaming Song, and Yang Gao
 <br>
 ## Approach
 <div align="center">
-![src/pipeline_video.mp4](https://github.com/seervideodiffusion/SeerVideoLDM/blob/main/src/pipeline_video.mp4)
+![[src/pipeline_video.mp4](https://github.com/seervideodiffusion/SeerVideoLDM/blob/main/src/pipeline_video.mp4)](https://raw.githubusercontent.com/seervideodiffusion/SeerVideoLDM/main/src/pipeline_video.mp4)
 </div>
 
 
