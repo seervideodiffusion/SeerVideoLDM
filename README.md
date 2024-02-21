@@ -84,7 +84,7 @@ data
 ```
 
 ## Fine-tune Seer From Inflated Stable Diffusion
-1.Download the initialization checkpoint of FSText model ([download](https://drive.google.com/drive/folders/16WTplpnBvtdRFh0C9gQ69Aa7uTHUfQor?usp=sharing)), then place it under `store_pth/` 
+1.Download the initialization checkpoint of FSText model ([download](https://media.githubusercontent.com/media/seervideodiffusion/checkpoints/main/fstext_init.zip)), then place it under `store_pth/` 
 
 2.To fine-tune with 24GB NVIDIA 3090 GPUs by running:
 ```
