@@ -84,7 +84,7 @@ data
 ```
 
 ## Fine-tune Seer From Inflated Stable Diffusion
-1.Download the initialization checkpoint of FSText model ([download](https://drive.google.com/drive/folders/16WTplpnBvtdRFh0C9gQ69Aa7uTHUfQor?usp=sharing)), then place it under `store_pth/` 
+1.Download the initialization checkpoint of FSText model ([download](https://cdn-lfs-us-1.huggingface.co/repos/a2/2c/a22cdbf99427d532d5a6fb63746b474b12a944684e9f0781c21e402b21362d7f/e9cef0a98815790306f315f05b71a1360604047707f5bcffb2c5778fd595ab15?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27pytorch_model.bin%3B+filename%3D%22pytorch_model.bin%22%3B&response-content-type=application%2Foctet-stream&Expires=1708744261&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTcwODc0NDI2MX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy11cy0xLmh1Z2dpbmdmYWNlLmNvL3JlcG9zL2EyLzJjL2EyMmNkYmY5OTQyN2Q1MzJkNWE2ZmI2Mzc0NmI0NzRiMTJhOTQ0Njg0ZTlmMDc4MWMyMWU0MDJiMjEzNjJkN2YvZTljZWYwYTk4ODE1NzkwMzA2ZjMxNWYwNWI3MWExMzYwNjA0MDQ3NzA3ZjViY2ZmYjJjNTc3OGZkNTk1YWIxNT9yZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPSomcmVzcG9uc2UtY29udGVudC10eXBlPSoifV19&Signature=l2U6eMXiJYMunYh4ayPTDsTrL1bWps7lN0dTHWtxC6krHxRfvZPWwYiykJ-kYLsFikL5ywmDL2ctNkjd9nl0vKo8WEBh09-LQrw30WPIhhukbY7DEKxbEI1wK-NtgOrNbEPGYuYyiXXFOQCZRJ01Lc3bfkwL7elgMvsOJiISzW9g25RkpA-r6zrfW5XnsZHuJaLsPF1VRpZzlReZitu50b1TmSvLMXgbUZvIhs4DK1OzN6AJIzYGk4x0xPUH%7E9nFS2tn389BNzYc1GscHKvoEeFJ2lIoiLqGtDuHqNPwX4m3mzj%7EJYQJqKIho1OQV4Dl5ewkXpxkC6NnghNGG3kOBQ__&Key-Pair-Id=KCD77M1F0VK2B)), then place it under `store_pth/fstext_init` 
 
 2.To fine-tune with 24GB NVIDIA 3090 GPUs by running:
 ```

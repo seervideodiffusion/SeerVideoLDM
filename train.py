@@ -182,7 +182,7 @@ def main(args):
     fstext_init_state_dict = torch.load(args.fstext_init_ckpt, map_location="cpu")
     msg = fstext_model.load_state_dict(fstext_init_state_dict, strict=False)
     del fstext_init_state_dict
-    fstext_model.set_training_numframe(args.num_frames)
+    fstext_model.set_numframe(args.num_frames)
     sunet.requires_grad_(False)
     for name, module in sunet.named_modules():
         if name.endswith(tuple(trainable_modules)):
