@@ -4,6 +4,7 @@ import os
 from pathlib import Path
 from typing import Optional
 from einops import rearrange, repeat, reduce
+from multiprocessing import Process
 
 import numpy as np
 import torch
@@ -21,6 +22,7 @@ from seer.models.unet_3d_condition import SeerUNet, FSTextTransformer
 from diffusers.optimization import get_scheduler
 from diffusers.utils.import_utils import is_xformers_available
 from huggingface_hub import HfFolder, Repository, whoami
+from multiprocessing import Process
 
 # TODO: remove and import from diffusers.utils when the new version of diffusers is released
 from packaging import version

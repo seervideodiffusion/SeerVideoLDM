@@ -97,11 +97,12 @@ The default version of Stable-Diffusion is `runwayml/stable-diffusion-v1-5`.
 ### Checkpoint of Seer
 The checkpoints fine-tuned on Dataset Something-Something v. 2 (Sthv2), Bridge Data, and Epic Kitchens can be downloaded as following:
 
-| Dataset | num ref.frames | num frames |Link | 
-| :---: | :---:  | :---: | :---: |
-| Sthv2 | 2 | 12 |  [download]   |
-| Bridge Data | 1 | 16 |  [download]   |
-| Epic Kitchens | 1 | 16 |  [download]   |
+| Dataset | training steps| num ref.frames | num frames |Link | 
+| :---: | :---: | :---:  | :---: | :---: |
+| Sthv2 | 200k| 2 | 12 |  [[checkpoints](https://huggingface.co/xianfang/SeerVideo/tree/main/sthv2_seer)]   |
+| Bridge Data | 80k| 1 | 16 |  [[checkpoints](https://huggingface.co/xianfang/SeerVideo/tree/main/bridge_seer)]   |
+| Epic Kitchens | 80k| 1 | 16 |  [[checkpoints](https://huggingface.co/xianfang/SeerVideo/tree/main/epickitchen_seer)]   |
+| Sthv2+Bridge | 200k+80k| 1 | 16 |  [[checkpoints](https://huggingface.co/xianfang/SeerVideo/tree/main/sthv2bridge_seer)]   |
 
 After downloading a checkpoint file, place it under `outputs/` folder and set `output_dir` attributes in `inference.yaml` or `eval.yaml`.
 
@@ -118,6 +119,12 @@ python inference_img.py \
  --image_path="./src/figs/{image_name}.jpg" \
  --input_text_prompts="{your input text}"
 ```
+For Example
+```
+python inference_img.py\
+--config="./configs/inference_base.yaml"\ --image_path="./src/figs/book.jpg"\ --input_text_prompts="close book"
+```
+(Hints: We recommend using Sthv2+Bridge [checkpoints](https://huggingface.co/xianfang/SeerVideo/tree/main/sthv2bridge_seer) for improved performance in zero-shot video prediction tasks.)
 
 ## Evaluation
 

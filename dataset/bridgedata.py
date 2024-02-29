@@ -6,6 +6,7 @@ import os.path as osp
 from torch.utils.data import Dataset
 from torch.utils import data
 from pathlib import Path
+import json
 
 class Dataset(data.Dataset):
     def __init__(
@@ -24,7 +25,7 @@ class Dataset(data.Dataset):
         super().__init__()
         self.folder = folder
         self.raw_frames_dir = osp.join(folder,'rawframes')
-        self.annotations_file = osp.join(folder,'path_id_bridgedata.txt')
+        self.annotations_file = './dataset/path_id_bridgedata.txt'
         self.image_size = image_size
         self.channels = channels
         self.exts = exts

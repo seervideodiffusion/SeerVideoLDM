@@ -23,7 +23,7 @@ class Dataset(data.Dataset):
     ):
         super().__init__()
         self.folder = folder
-        self.annotations_dir = './epic-kitchens-100-annotations'
+        self.annotations_dir = './dataset/epic-kitchens-100-annotations'
         self.raw_frames_dir = osp.join(folder,'EPIC-KITCHENS')
         self.image_size = image_size
         self.channels = channels
@@ -37,7 +37,7 @@ class Dataset(data.Dataset):
         self.text_dict = []
         with open(f, mode='r') as csv_file:
             csv_reader = csv.DictReader(csv_file)
-            for row in  :
+            for row in csv_reader:
                 text_prompt,start_frame,end_frame = row["narration"].strip(),int(row["start_frame"].strip()),int(row["stop_frame"].strip())
                 self.text_dict.append({"dir_id":row["participant_id"],"video_id":row["video_id"],"text_prompt":text_prompt,"start":start_frame,"end":end_frame})
         
